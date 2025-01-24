@@ -85,9 +85,9 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 text-primary" />
                 <span>Kiptenden, Kericho, Kenya</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary" />
-                <span>kiptendeneducationempowerment@gmail.com</span>
+              <div className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-primary flex-shrink-0" />
+                <span className="break-all">kiptendeneducationempowerment@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
