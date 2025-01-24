@@ -21,7 +21,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between">
+      <div className="container mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-4-KUHkH7C4rAL0APUftdWudZ3p8KMrhv.jpeg"
