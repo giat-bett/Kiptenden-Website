@@ -1,3 +1,4 @@
+import CostEstimateSection from "@/components/sections/cost-estimate-section"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
 
@@ -9,15 +10,19 @@ export default function AboutPage() {
       role: "University of Embu, Kenya",
       image: "/images/leaders-patron.png?height=400&width=400",
       message:
-        "Kiptenden Education Empowerment group has withstood a test of time. The group was founded on the premise of social transformation through resource mobilization and education empowerment.",
-    },
-    {
-      name: "Mercy Rono",
-      title: "Pioneer Member",
-      role: "Alumni",
-      image: "/images/leaders-mercy.png?height=400&width=400",
-      message:
-        "Since the inception of Kiptenden Education Empowerment Group (KEEG), we have seen programs that have benefitted us as students of Chepseon Kiptenden.",
+        `Kiptenden Education Empowerment group, founded in 2014, has withstood a test of time. The 
+group was founded on the premise of social transformation through resource mobilization and 
+education empowerment. We have seen it grow over years and the number of students supported 
+to university level is a true testament of commitment and resilience. 
+
+As we celebrate ten years of 
+excellent work; we desire to refocus on strategy in order to keep the fire of success flowing. We 
+are reaching out to likeminded partners to travel this journey together as we plan to establish 
+community resource centre which will hold a library, ICT training centre, and other learning 
+facilities. 
+
+We believe on unity of purpose and direction and am proud to be identified with a 
+dynamic society such as ours. Long live Kiptenden Education Empowerment`,
     },
     {
       name: "Davis",
@@ -30,6 +35,29 @@ export default function AboutPage() {
 
       The Community's light shines brightly as young people unite to empower one another through education. Together, we demonstrate that great things can be accomplished when a community works as one.`,
     },
+    {
+      name: "Mercy Rono",
+      title: "Pioneer Member",
+      role: "Alumni",
+      image: "/images/leaders-mercy.png?height=400&width=400",
+      message:
+        `Since the inception of Kiptenden Education Empowerment Group (KEEG), we have seen 
+programs that have benefitted us as students of Chepseon Kiptenden. Such programs include group 
+discussions during holidays, occasional mentorship programs, and farewell parties/fundraisers to 
+high schools, colleges and universities. 
+
+I wish to acknowledge efforts that have been put over time 
+in ensuring continuity of these programs. Our biggest mentor, Dr. Bengat, has always walked with 
+us and given us guidances. Second, I thank our parents who comprise the committee that first came 
+up with the idea of this group. They saw it good for us to benefit in matters education. 
+
+Lastly, my gratitude goes to students of Chepseon Kiptenden for positively embracing this good thing. We 
+actually count ourselves lucky, and we thank God!
+
+I am a proud pioneer, and I am happy to see more and more beneficiaries over generations!
+`,
+    },
+
   ]
 
   return (
@@ -37,7 +65,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[300px] mb-12">
         <Image
-          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1920"
+          src="/images/about-keeg.jpg?q=80&w=1920"
           alt="Education community"
           fill
           className="object-cover brightness-50"
@@ -47,22 +75,29 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="container max-w-6xl mx-auto px-4">
+      <div className="container max-w-8xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div>
             <Card>
               <CardContent className="p-6">
-                <p className="text-lg leading-relaxed">
-                  We are a community based organization aiming at bettering community education uptake by empowering
-                  school going students to be more focused in their studies.
-                </p>
+              <p className="text-lg leading-relaxed">
+                We are a community-based organization dedicated to enhancing education uptake within the community by empowering 
+                school-going students to stay focused on their studies. Our initiatives include:  
+                <ul className="list-disc list-inside mt-2">
+                  <li>Organizing community motivational workshops during holidays.</li>
+                  <li>Facilitating group discussions, idea-sharing sessions, and competitions.</li>
+                  <li>Providing learning materials to support academic growth.</li>
+                  <li>Offering mentorship programs for young community professionals.</li>
+                </ul>
+              </p>
+
               </CardContent>
             </Card>
           </div>
           <div className="relative h-[300px] rounded-lg overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1920"
-              alt="Students in classroom"
+              src="/images/keeg-banner-unveil.jpg?q=80&w=1920"
+              alt="Unveiling of the banner"
               fill
               className="object-cover"
             />
@@ -73,7 +108,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1920"
+                src="/images/parents-get-gifts.jpg?q=80&w=1920"
                 alt="Community meeting"
                 fill
                 className="object-cover"
@@ -119,6 +154,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+        <CostEstimateSection/>
       </div>
     </div>
   )

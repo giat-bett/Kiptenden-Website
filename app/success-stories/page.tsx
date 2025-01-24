@@ -20,13 +20,13 @@ export default function SuccessStoriesPage() {
   const stories = [
     {
       title: "Ten Year Anniversary",
-      image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920",
+      image: "/images/ten-year-anniversary.jpg?q=80&w=1920",
       content:
         "Though our commitment and resilience we marked our ten year anniversary in the year 2024. This was a true reflection of the journey that we have undertaken. The commitment from both parents and students is what brought us this far.",
     },
     {
       title: "Growing Impact",
-      image: "https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?q=80&w=1920",
+      image: "/images/university-comrades.jpg?q=80&w=1920",
       content:
         "Over the years, we've helped 77 students transition to universities. Our commitment to education has created lasting change in our community, empowering the next generation of leaders.",
     },
@@ -36,7 +36,7 @@ export default function SuccessStoriesPage() {
     <div>
       <section className="relative h-[300px] mb-12">
         <Image
-          src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1920"
+          src="/images/many-members-in-tent.jpg?q=80&w=1920"
           alt="Success stories header"
           fill
           className="object-cover brightness-50"

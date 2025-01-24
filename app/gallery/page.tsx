@@ -1,46 +1,47 @@
+import { ImageCarousel } from "@/components/sections/ImageCarousel"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import Image from "next/image"
-import Link from "next/link"
+// import { ImageCarousel } from "@/components/ImageCarousel"
 
 export default function GalleryPage() {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1920",
+      src: "/images/community-workshop.jpg?q=80&w=1920",
       alt: "Community learning session",
       title: "Community Workshop 2023",
     },
     {
-      src: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=1920",
+      src: "/images/group-study.jpg?q=80&w=1920",
       alt: "Students in discussion",
       title: "Student Discussion Group",
     },
     {
-      src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1920",
+      src: "/images/kiptenden-comrades.jpg?q=80&w=1920",
       alt: "Educational workshop",
       title: "Educational Workshop",
     },
     {
-      src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1920",
+      src: "/images/graduates-and-dr-bengat.jpg?q=80&w=1920",
       alt: "Graduation celebration",
       title: "Graduation Day",
     },
     {
-      src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1920",
+      src: "/images/women-empowerment-at-keeg.jpg?q=80&w=1920",
       alt: "Student success",
       title: "Success Stories",
     },
     {
-      src: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1920",
+      src: "/images/group-study.jpg?q=80&w=1920",
       alt: "Group study session",
       title: "Group Study",
     },
   ]
 
   return (
-    <div>
-      <section className="relative h-[300px] mb-12">
+    <div className="space-y-12">
+      <section className="relative h-[300px]">
         <Image
-          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1920"
+          src="/images/comrades-with-shoulder-bands.jpg?q=80&w=1920"
           alt="Gallery header"
           fill
           className="object-cover brightness-50"
@@ -49,8 +50,8 @@ export default function GalleryPage() {
           <h1 className="text-4xl font-bold text-white text-center">Photo Gallery</h1>
         </div>
       </section>
-
-      <div className="container max-w-6xl mx-auto px-4 py-12">
+      <section className="container max-w-6xl mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">All Images</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image, index) => (
             <Card key={index} className="border-2 border-secondary">
@@ -60,7 +61,7 @@ export default function GalleryPage() {
                     src={image.src || "/placeholder.svg"}
                     alt={image.alt}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <CardHeader className="px-0 pt-4">
@@ -70,8 +71,11 @@ export default function GalleryPage() {
             </Card>
           ))}
         </div>
-      </div>
+      </section>
+      <section className="container max-w-7xl mx-auto px-4 py-2">
+        <h2 className="text-3xl font-bold text-center mb-8">Featured Images</h2>
+        <ImageCarousel images={images} />
+      </section>
     </div>
   )
 }
-

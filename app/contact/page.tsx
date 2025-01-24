@@ -38,7 +38,7 @@ export default function ContactPage() {
     <div>
       <section className="relative h-[300px] mb-12">
         <Image
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1920"
+          src="/images/the-group.jpg?q=80&w=1920"
           alt="Contact header"
           fill
           className="object-cover brightness-50"
@@ -83,15 +83,15 @@ export default function ContactPage() {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span>Kiptenden, Kenya</span>
+                <span>Kiptenden, Kericho, Kenya</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>info@keeg.org</span>
+                <span>kiptendeneducationempowerment@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+254 XXX XXX XXX</span>
+                <span>+254 720 572 348</span>
               </div>
 
               <div className="pt-4">

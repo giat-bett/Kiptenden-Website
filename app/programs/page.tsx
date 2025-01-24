@@ -9,21 +9,21 @@ export default function ProgramsPage() {
       icon: Users,
       description:
         "Sustainable development cannot be achieved in the absence of peace, and true and lasting peace can only be realized through the involvement of all actors within the society. This program strives to build communities' capacities to embrace participatory and inclusive peace processes. Bringing together children from the community builds up a sense of belonging in them and helps boost children's morale and confidence.",
-      image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1920",
+      image: "/images/community-education.jpg?q=80&w=1920",
     },
     {
       title: "Leadership and mentorship",
       icon: UserCheck,
       description:
         "This program seeks to strengthen the capacity of communities and most importantly empower the young Generation into taking up leadership roles and positions in their various institutions to effectively exercise their civic rights and duties. Through mentorship, we help guide students towards achieving their full potential and becoming future leaders.",
-      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1920",
+      image: "/images/leadership-mentorship.jpg?q=80&w=1920",
     },
     {
       title: "Gender Equality",
       icon: Users2,
       description:
         "Our program aims at enhancing the capacity of communities to understand and address obstacles to gender equality. Our Objective is to contribute to a society where everyone regardless of gender has equal access to resources, opportunities as well as equal representation and participation in social, economic and political spheres.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1920",
+      image: "/images/gender-equality.jpg?q=80&w=1920",
     },
   ]
 
@@ -31,10 +31,10 @@ export default function ProgramsPage() {
     <div>
       <section className="relative h-[300px] mb-12">
         <Image
-          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1920"
+          src="/images/spiritual-programs.jpg?q=80&w=1920"
           alt="Programs header"
           fill
-          className="object-cover brightness-50"
+          className="object-cover brightness-65"
         />
         <div className="relative z-10 container h-full flex items-center justify-center">
           <h1 className="text-4xl font-bold text-white text-center">Our Programs</h1>

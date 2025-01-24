@@ -1,3 +1,4 @@
+import QuoteCard from "@/components/sections/quote-card"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen, Users, Target } from "lucide-react"
@@ -8,10 +9,10 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 px-4">
+      <section className="relative py-20 px-4 mx-auto">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1920"
+            src="/images/community-education.jpg?q=80&w=1920"
             alt="Students studying"
             fill
             className="object-cover brightness-[0.2]"
@@ -64,10 +65,10 @@ export default function Home() {
       <section className="py-16 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1522661067900-ab829854a57f?q=80&w=1920"
+            src="/images/graduates-and-dr-bengat.jpg?q=80&w=1920"
             alt="Educational background"
             fill
-            className="object-cover opacity-10"
+            className="object-cover opacity-20"
           />
         </div>
         {/* Mission */}
@@ -119,6 +120,7 @@ export default function Home() {
           </Card>
         </div>
       </section>
+      <QuoteCard/>
     </div>
   )
 }
